@@ -1,0 +1,11 @@
+Research 
+
+Can machine learning be used to design a city? The answer is yes.  
+
+My research aims at finding a way to use machine learning in urban planning.  When buildings are being designed, engineers use all sorts of time-consuming simulations to check various conditions of the building, for example lighting, air flow. There may be as many as 2^70 possible designs of a building. With all these possibilities, the speed at which simulations are run becomes paramount to whether the problem can be solved at all. Even 5 minutes would be too slow for such a scenario. 
+
+Currently due to time constraints, architects and engineers typically make only a few designs to be simulated. Such an approach leads to potentially thousands of better implementations left undiscovered. 
+
+ The use of machine learning could potentially solve the problem. Using data set form past simulations, an AI can be created which is able evaluate the design of a building in a much faster way. Simulation that would have taken days can be done by the AI in a few seconds while retaining a high level of accuracy. 
+
+ This would allow the architect to try millions of designs and select the best one a million possible plans instead of just ten, which would help improve the overall quality of the building.

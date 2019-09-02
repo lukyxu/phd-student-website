@@ -1,0 +1,21 @@
+Machine learning is a type of artificial intelligence (AI), that builds a model from example data to
+make data driven predictions without having to follow strict static program instructions.
+Machine learning can learn from data by using supervised or unsupervised machine learning.
+Supervised algorithms require humans to provide the input and the desired output and the
+algorithm analyses the features and determines a relationship between an input and output
+creating a model which can be used on new data to make predictions. The supervised learning
+algorithms includes two categories of algorithms, regression algorithms such as using linear
+regression and classification algorithms which include Naïve Bayes classifier and logistic
+regression.
+Unsupervised machine learning involves algorithms which analyse the input data and tries to
+identify groups of data with similar traits through inferences from the dataset. Whilst supervised
+machine learning is used to predict values, unsupervised machine learning is used in clusters
+analysis where the algorithm will try find hidden patterns, groupings or associations in a piece of
+data. Algorithms for unsupervised learning include the k-means clustering and the hierarchical
+clustering.
+
+
+Geometric deep learning is an umbrella term for emerging techniques that attempt to generalize deep neural models
+(structured) to non-Euclidean domains such as graphs and The purpose of this paper is to review various examples of
+geometric deep learning problems and present solutions, key problems, applications and future research directions in
+this emerging field.

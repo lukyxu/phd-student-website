@@ -1,0 +1,5 @@
+Potential Blog Post 
+
+From the Developers 
+
+This website was created as part of the Computing Topics module, undertaken by first year computing students at Imperial College London. The students, namely Ivan Ereshchenko, Kerry Xu, Hantang Sun and Jordan Kisa were tasked with creating a website for public engagement within 2 weeks. The website aims to promote the research area and work of a PhD student within the Department of Computing. As group we decided to select Eduardo as the PhD student we wished to create a website for as we all interest within the field of machine learning and its possible applications within the current world. In a subsequent blog post we will present one of the applications of machine learning we have recently studied.

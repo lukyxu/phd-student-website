@@ -1,0 +1,71 @@
+Research
+
+
+
+Bibliography
+
+
+PhD candidate in Computer Science of Imperial College London. My research focuses on Machine Learning for design optimization in architecture and engineering.
+
+I am broadly interested in Statistics, Machine Learning, Stochastic Processes, Formula 1 and Robotics.
+
+
+
+Recording (first 10 min)
+
+people make decision
+computatation not fast enough
+repalce the simulation with somthing faster
+---machine Learning
+have good mdel and alogorithm
+if stat model is good enough , with some data set
+replace actual simulation
+
+decision based on simulation
+eg air flow
+emulate simulation
+
+engineering experience, if we know answer, why replace:
+
+2^70 possibity 5min too long
+ 1 day -> 1second using neural net
+ milliosn more solution
+ 
+ problem:
+ pick 10 possibity give to engineer(doing simulation give  back result)
+ consider 1million possibity in stead of 10
+ 
+ simulation of lighting, 
+ case study vertical skylight component
+ 
+ light goes into window: too low ->dark
+ 
+ simulation 1 min each
+ 1 year to get good data set
+ 
+next step air flow
+
+general neuralnet for (air-flow, lighting..)
+
+aim: general purpose
+meta Learning
+
+typical
+dataset A -> fit a network -> make perdiction
+B -> start from scratch again
+
+meta Learning
+teach it how to Learning
+general general representation for Learning task
+
+air for city A,B
+light , air
+
+lighting does take long to get data
+after finish light, start working on cfd
+
+
+
+
+
+

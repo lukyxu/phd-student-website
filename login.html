@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ereshchenko.com:8080/socket.io/socket.io.js"></script>
+        <script src="login.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="./sjcl/sjcl.js"></script>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+    </head>
+    <body class="login">
+        <form class="login" action="javascript:loginSubmit()" method="post">
+            <h1>Administrator Login</h1>
+            <input class="login" type="text" id="username" placeholder="Enter your username" required>
+            <input class="login" type="password" id="password" placeholder="Enter your password" required>
+            <input type="submit" id="Submit">
+            <p><div class="response"></div></p>
+            <p>If you would like to register as an admin, <br><a href="./register.html">click here</a></p>
+        </form>
+    </body>
+</html>

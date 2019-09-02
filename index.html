@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="links">
+                <h3 style="white-space: pre;"> Eduardo Carvalho </h3>
+                <ul style="list-style-type:none;">
+                    <li><a href="javascript:scrollToElem('topbar')">Home</a></li>
+                    <li><a href="javascript:scrollToElem('researchTitle')">Research</a></li>
+                    <li><a href="javascript:scrollToElem('publicationTitle')">Publications</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <br><br>
+                </ul>
+            </div>
+            <div class="socials">
+                <ul style="list-style-type:none;">
+                    <li><a href="https://www.linkedin.com/in/eduardo-carvalho-81461a90?originalSubdomain=uk">Linkedin</a></li>
+                    <li><a href="https://github.com/happenwah">Github</a></li>
+                    <li><a href="./login.html">Admin Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="banner">
+                <div class="bannertext"></div>
+            </div>
+            <div class="topbar">
+                <div class="title">
+                    <img src="burgermenuwhite.svg" class="burgericon">
+                    <h1></h1>
+                </div>
+            </div>
+            <img src="portrait.jpg" class="avatar" alt="avatar">
+            <div id="intro">
+                <div class="hidden">
+                    <span class="avatartext">I'm Eduardo.</span>
+                    <div id="bio" class="paragraph">
+                        I am a computer scientist and statistician. My research focuses on machine learning for design
+                        optimization in architecture and engineering. <br> <br>
+                        I am currently doing my PhD on machine learning for urban planning at Imperial College London under the
+                        supervision of professor Paul Kelly.<br> <br>
+                        My interests include statistics, machine learning, stochastic processes, robotics and Formula 1.
+                    </div>
+                    <div class="buttonwrapper">
+                        <div class="pagelinks">
+                            <button onclick="scrollToElem('researchTitle')">Research</button>
+                            <button onclick="scrollToElem('publicationTitle')">Publications</button>
+                            <button onclick="location.href='blog.html'" type="button">Blog</button>
+                            <button onclick="location.href='https://github.com/happenwah'">GitHub</button>
+                            <button onclick="location.href='https://www.linkedin.com/in/eduardo-carvalho-81461a90?originalSubdomain=uk'">
+                                LinkedIn
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner2">
+
+            </div>
+
+            <div id="research">
+                <div class="researchTitle">
+                    My Research
+                </div>
+                <div class="paragraph">
+                    <div class="hidden">
+                        <strong>Can machine learning be used to design a city?</strong>
+                        <br><br>
+                        This question drives my research. My research aims at finding a way to use machine learning in urban
+                        planning. When
+                        buildings are being designed, time consuming simulations need to be done to check various conditions of
+                        the building for example for lighting and air flow. There may be as many as 2^70 possible different
+                        designs of a
+                        building. With all these possibilities, the speed at which simulations are run becomes paramount to
+                        whether the problem can be solved at all. Even 5 seconds would be too slow for such a scenario.
+                        <br><br>
+                        Architects and Engineers currently make only a few designs to be simulated.
+                        Such an approach would cause many excellent designs to be ignored. The use of machine learning could
+                        potentially solve the problem. Using data set form past simulations, an AI can be created which is able
+                        evaluate the design of a building in a much faster way. Simulation that would have taken days can be
+                        done by the AI in a few seconds while retaining a high level of accuracy. This would allow the architect
+                        to try millions of designs and select the best one a million possible plans instead of just ten, which
+                        would help improve the quality of the building.
+                        <br><br>
+                    </div>
+                    <div class="hidden">
+                        <strong>Meta Learning</strong>
+                        <br><br>
+                        Traditionally, neural networks only work for one dataset. For a new set of data, a new neural network
+                        needs to be built from scratch, causing a waste of time and resource. The research aims at producing a
+                        general-purpose neural network to handle everything, from airflow in a city to lighting condition of
+                        building in another city. A possible way of building such a general-purpose algorithm is meta learning.
+                        Meta learning is a subfield of machine learning where automatic learning algorithms are applied on
+                        metadata about machine learning experiments. The main goal is to use such metadata to understand how
+                        automatic learning can become flexible in solving learning problems, hence to improve the performance of
+                        existing learning algorithms or to learn (induce) the learning algorithm itself, hence the alternative
+                        term learning to learn.
+                        <br><br>
+                        Flexibility is important because every learning algorithm is based on a set of data assumptions and
+                        their inductive bias. This means that only if the bias matches the learning problem will it learn well.
+                        In one domain, a learning algorithm can work very well, but not on the next. This poses strong
+                        restrictions on the use of machine learning or data mining techniques, since the relationship between
+                        the learning problem (often some type of database) and the effectiveness of different learning
+                        algorithms is not yet understood. <a href="javascript:scrollToElem('references')">(1)</a>
+                        <br><br>
+                        Using different types of metadata, such as learning problem properties, algorithm properties (such as
+                        performance measures), or patterns previously derived from the data, different learning algorithms can
+                        be learned, selected, altered or combined to solve a particular learning problem effectively. A good
+                        meta-learning analogy considers that genetic evolution learns the learning process encoded in genes and
+                        carried out in the brain of each individual. <a href="javascript:scrollToElem('references')">(1)</a>
+                        <br><br>
+                    </div>
+                    <div class="hidden">
+                        <strong> Geometric Deep Learning </strong>
+                        <br><br>
+                        The designs of buildings are represented as meshes/point clouds, which can themselves be thought of as
+                        discrete representations of manifolds. Such structures are very different from images (regular
+                        2-dimensional grids) or words, in the sense that they do not lie on regular 3-dimensional grids. "The
+                        non-Euclidean nature of such data implies that there are no such familiar properties such as global
+                        parameterization, common systems of coordinates, vector space structures, or shift-invariance." <a
+                            href="javascript:scrollToElem('references')"> (2)</a> Most research into deep learning so far has
+                        been focused on 1D, 2D or 3D Euclidean-structured data such as acoustic signals, images or videos.
+                        "Consequently, basic operations like convolution that are taken for granted in the Euclidean case are
+                        not well defined on non-Euclidean domains and an alternative approach must be used instead of
+                        traditional deep learning techniques." <a href="javascript:scrollToElem('references')"> (2)</a>
+                        <br><br>
+                        Recently there has been an increasing interest in geometric deep learning. Geometric Deep Learning is an
+                        emerging sub-field which tries to bring the representational power of neural nets to these unstructured
+                        domains, such as data living in manifolds or graphs.
+                        Deep learning over non-Euclidean structured data has a range of applications in the domain of network
+                        analysis, computational social science, or computer graphics.<a
+                            href="javascript:scrollToElem('references')"> (3)</a>
+                        Recently, an increasingly large quantity of non-Euclidean structured data such as manifolds or graphs
+                        must be processed however traditional deep learning has problems with the non-Euclidean nature of the
+                        data. Examples include social networks, transport networks or sensor networks. A solution for urban
+                        planning may be geometric deep learning. I hope to build surrogate models of simulations happening on
+                        CAD platforms by using the enhanced representational power of Geometric deep learning.
+                    </div>
+                </div>
+            </div>
+            <div class="banner3">
+
+            </div>
+            <div id="publication">
+                <div class="publicationTitle">
+                    Publications
+                </div>
+                <div class="paragraph">
+                    <div class="hidden">
+                        I have recently co-authored "Characterizing Visual Location and Mapping Datasets" which will appear at
+                        International Conference on Robotics and Automation (ICRA) 2019. You can find the full reference here:
+                        <a href="https://www.sajad-saeedi.ca/publications.html">https://www.sajad-saeedi.ca/publications.html</a>.
+                        We are working on the camera-ready version, after which
+                        my co-author will make the pre-print available. In summary, this work is about using some statistically
+                        grounded ideas (my share of contribution) in order to measure how complex/difficult different virtual
+                        environments (datasets, sequences of images) are, which can then be useful for people to (more honestly)
+                        benchmark algorithms in robotic navigation tasks.
+                        <br><br>
+                    </div>
+                    <div class="hidden references">
+                        <Strong>References</Strong>
+                        <br><br>
+                        (1) <a href="https://en.wikipedia.org/wiki/Meta_learning_(computer_science)">
+                        https://en.wikipedia.org/wiki/Meta_learning_(computer_science)</a>
+                        <br>
+                        (2) <a href="https://arxiv.org/pdf/1611.08097.pdf"> Bronstein MM, Bruna J, LeCun Y, Szlam A,
+                        Vandergheynst P. Geometric deep learning: going beyond euclidean data. IEEE Signal Processing Magazine.
+                        2017 Jul;34(4):18-42. </a>
+                        <br>
+                        (3) <a href="https://arxiv.org/pdf/1611.08402.pdf"> Monti F, Boscaini D, Masci J, Rodola E, Svoboda J,
+                        Bronstein MM. Geometric deep learning on graphs and manifolds using mixture model CNNs. InProc. CVPR
+                        2017 Jul 1 (Vol. 1, No. 2, p. 3). </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="sidebar.js"></script>
+        <script src="jquery.waypoints.js"></script>
+        <script src="animations.js"></script>
+    </body>
+</html>

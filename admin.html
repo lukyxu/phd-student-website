@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+    <html>
+    <script src="https://ereshchenko.com:8080/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="getblog.js"></script>
+    <script src="checkLogin.js"></script>
+    <script src="sidebar.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+    <body class="admin" onload="getTitles()">
+            <div class="sidebar">
+                    <div class="links">
+                        <h3 style="white-space: pre;"> Administration Page</h3>
+                        <ul style="list-style-type:none;">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <br><br>
+                        </ul>
+                    </div>
+                </div>
+        <div class="main">
+                <div class="topbar">
+                        <div class="title">
+                            <img src="burgermenuwhite.svg" class="burgericon">
+                            <h1></h1>
+                        </div>
+                    </div>
+        <div id="previewWindow" class="modal">
+            <div class="previewContent">
+                <span class="close">&times;</span>
+                <br>
+                    <div class="blog">
+                        <div class="blogposttitle"></div>
+                        <div class="blogpostdate"></div>
+                        <div class="blogpostcontent"></div>
+                    </div>
+            </div>
+        </div>
+        <div class="creation">
+            <h2>Create a blog post</h2>
+            <form action="javascript:createPost()">
+            Title of post
+            <br>
+                <input id="title" placeholder="Enter the title of your post" type="text" required>
+                <br><br>
+            Content of post
+            <br>
+                <textarea id="content" placeholder="Enter the content of the blog post here" rows="20" cols="70"></textarea>
+                <br>
+                <input class="admin" type="submit" value="submit">
+                <div class="response"></div>
+            </form>
+            <button onclick="previewPost()">preview</button>
+            <br>
+        </form>
+        <br>
+        <div class="markup">
+            Some markup:<br>
+            &lt;b&gt;Sample text&lt;/b&gt; - <b>Bold</b><br>
+            &lt;i&gt;Sample text&lt;/i&gt; - <i>Italics</i><br>
+            &lt;img&gt;Image_Source&lt;/img&gt; - Image <br>
+            &lt;code&gt;Sample text&lt;/code&gt; - <code>Inline code</code><br>
+            &lt;pre&gt;&lt;code&gt;Sample text&lt;/code&gt;&lt;/pre&gt; -
+            <pre><code>Block code</code></pre>
+        </div>
+    </div>
+
+        <div class="edit">
+                <h2>Edit a blog post</h2>
+                <div class="initialForm">
+                    <form action="javascript:selectPostToEdit()">
+                        Select the post that you wish to edit
+                        <div class="editTitles"></div><br>
+                        <input class="admin" type="submit" value="select">
+                    </form>
+                </div>
+                <div class="secondaryForm">
+                    Content of post
+                    <br>
+                    <form action="javascript:editPost()">
+                        <textarea id="editContent" rows="20" cols="70"></textarea>
+                        <br>
+                        <input class="admin" type="submit" value="submit">
+                        <div class="responseEdit"></div>
+                    </form>
+                    <button onclick="previewEditPost()">preview</button>
+                    <br>
+                    <div class="markup">
+                        Some markup:<br>
+                        &lt;b&gt;Sample text&lt;/b&gt; - <b>Bold</b><br>
+                        &lt;i&gt;Sample text&lt;/i&gt; - <i>Italics</i><br>
+                        &lt;img&gt;Image_Source&lt;/img&gt; - Image <br>
+                        &lt;code&gt;Sample text&lt;/code&gt; - <code>Inline code</code><br>
+                        &lt;pre&gt;&lt;code&gt;Sample text&lt;/code&gt;&lt;/pre&gt; - <pre><code>Block code</code></pre>
+                    </div>
+                </div>
+            </div>
+
+        <div class="titles">
+            Loading...
+        </div>
+
+        <div class="userCheck">
+            <h2>Admin Approval</h2>
+            The users below have applied to be admins. Select the checkbox if you want the user to become a verified admin, or keep it unselected if you want them deleted.
+            <p style="color:red">WARNING: THIS CANNOT BE UNDONE</p>
+            <form action="javascript:submitAdmins()">
+                <div class="adminFormJQ"></div>
+            </form>
+            <div class="responseAdminSelection"></div>
+        </div>
+        <div class="deleteAdmin">
+            <h2>Admin Deletion</h2>
+            If required, select an admin user below to be removed.
+            <p style="color:red">WARNING: THIS CANNOT BE UNDONE</p>
+            <form action="javascript:deleteAdmins()">
+                <div class="adminFormRM"></div>
+            </form>
+            <div class="responseAdminDeletion"></div>
+        </div>
+    </div>
+    </body>
+</html>

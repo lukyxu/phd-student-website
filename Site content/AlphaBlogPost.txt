@@ -1,0 +1,9 @@
+Behold A New World Chess Champion! Alpha Zero - (Applications of machine learning) 
+
+Again, as part of the Computing Topics, first year students were required to take an introductory workshop into academic writing. The research paper that we were required to summarize was the A general reinforcement learning algorithm that masters chess, shogi and Go through self-play. From this paper, we gained knowledge of the Alpha Zero program which was developed by Google’s DeepMind.  Following a similar design to its predecessors, Alpha Zero uses the methodology of self-teaching with no prior knowledge of the game environment apart from the rules of chess.  
+
+The program differed from previous ones made by DeepMind, employing the Monte Carlo Tree Search algorithm, as opposed to the alpha-beta Tree search. This allows the algorithm to drastically reduce the number of moves which are tested for viability by only traversing through chains of moves which lead to the highest possibility of winning. As a result of these modifications the program saw substantial improvements over previously made algorithms. Often being able to outperform them within only a few hours of training. 
+
+You can view the paper here: 
+
+ https://deepmind.com/research/publications/general-reinforcement-learning-algorithm-masters-chess-shogi-and-go-through-self-play

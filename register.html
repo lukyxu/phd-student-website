@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ereshchenko.com:8080/socket.io/socket.io.js"></script>
+        <script src="register.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="./sjcl/sjcl.js"></script>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+    </head>
+    <body class = "login">
+        <form class="login" action="javascript:registerSubmit()" method="post">
+            <h1>Administration application</h1>
+            <input class="login" type="text" id="username" placeholder="Enter your username" required>
+            <input class="login" type="password" id="password" placeholder="Enter your password" required>
+            <input class="login" type="text" id="name" placeholder="Enter your full name" required>
+            <p><div class="response"></div></p>
+            <p>All applications are checked manually before access is given.</p>
+            <input type="submit" id="Submit">
+        </form>
+    </body>
+</html>

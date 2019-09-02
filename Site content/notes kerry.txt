@@ -1,0 +1,70 @@
+Can machine learning be used to design a city? 
+
+My answer is yes. My research aims at finding a way to use machine learning in urban planning. When buildings are being designed, time consuming simulations need to be done to check various conditions of the building ,for example lighting, air flow. There may be as many as 2^70 possible designs of a building. With all these possibilities, the speed  at which simulations are run becomes paramount to whether the problem can be solved at all. Even 5 seconds would be too slow for such a scenario.
+	
+	Architects and Engineers currently make only a few designs to be simulated. 
+	Such an approach would cause many excellent designs to be ignored. The use of machine learning could potentially solve the problem. Using data set form past simulations, an AI can be created which is able evaluate the design of a building in a much faster way. Simulation that would have taken days can be done by the AI in a few seconds while retaining a high level of accuracy. This would allow the architect to try millions of designs and select the best one a million possible plans instead of just ten, which would help improve the quality of the building.
+
+
+
+Traditionally, neural networks only work for one dataset. For a new set of data, a new neural network needs to be built from scratch, causing a waste of time and resource. The research aims at producing a general-purpose neural network to handle everything, from airflow in a city to lighting condition of building in another city. A possible way of building such a general-purpose algorithm is meta learning
+Meta learning is a subfield of machine learning where automatic learning algorithms are applied on metadata about machine learning experiments. The main goal is to use such metadata to understand how automatic learning can become flexible in solving learning problems, hence to improve the performance of existing learning algorithms or to learn (induce) the learning algorithm itself, hence the alternative term learning to learn.
+Flexibility is important because each learning algorithm is based on a set of assumptions about the data, its inductive bias. This means that it will only learn well if the bias matches the learning problem. A learning algorithm may perform very well in one domain, but not on the next. This poses strong restrictions on the use of machine learning or data mining techniques, since the relationship between the learning problem (often some kind of database) and the effectiveness of different learning algorithms is not yet understood.
+By using different kinds of metadata, like properties of the learning problem, algorithm properties (like performance measures), or patterns previously derived from the data, it is possible to learn, select, alter or combine different learning algorithms to effectively solve a given learning problem. A good analogy to meta-learning considers that genetic evolution learns the learning procedure encoded in genes and executed in each individual's brain. https://en.wikipedia.org/wiki/Meta_learning_(computer_science)
+
+
+
+PhD candidate in Computer Science of Imperial College London. My research focuses on Machine Learning for design optimization in architecture and engineering.
+I am broadly interested in Statistics, Machine Learning, Stochastic Processes, Formula 1 and Robotics
+
+
+
+Publications:
+I have recently co-authored "Characterizing Visual Location and Mapping Datasets" which will appear at International Conference on Robotics and Automation (ICRA) 2019.  In summary, this work is about using some statistically grounded ideas in order to measure how complex/difficult different virtual environments (datasets, sequences of images) are, which can then be useful for people to benchmark algorithms in robotic navigation tasks.
+
+
+
+Buildings are represented as meshes/point clounds, which can themselves be thought as discretised representations of manifolds. Such structures are very different from images (regular 2D grids) or words (one hot encodings of some vocabulary), in the sense that they do not lie on regular 3D grids. This means that the popular form of Deep learning such as CNNs will not directly work. Geometric Deep Learning is an emerging sub-field which tries to bring the representational power of neural nets to these unstructured domains, such as data living in manifolds or graphs. Using this enhanced representational power I hope to build surrogate models of simulations happening on CAD platforms. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5 Minutes
+Would you create a generate algorithm/neural network to handle everything e.g. airflow and lighting
+or would the algorithm have to be changed for each specific implementation. What is the aim
+Aim is to make a general purpose algorithm.
+Using Meta learning, recent trend in machine learning.
+Traditionally
+Data set a, feed neural network model, make predictions
+Data set b starts from scratch
+Meta learning
+Teach your model the art of learning how to learn, give network multiple data sets
+Learn good representations of the learning task such that they are transferrable for new scenarios
+Way of achieving a general purpose algorithm
+
+Starts with lighting
